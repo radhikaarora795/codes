@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// push i+1 always
+// if you get I, pop all stack and store in result
 class Solution {
 public:
     string smallestNumber(string pattern) {

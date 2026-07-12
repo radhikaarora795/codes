@@ -3,6 +3,51 @@ using namespace std;
 
 class Solution {
 public:
+    string shiftingLetters(string s, vector<vector<int>>& shifts) {
+        int n=s.size();
+        vector<int> diff(n,0);
+
+        for(auto &v:shifts){
+            int l=v[0];
+            int r=v[1];
+            int val;
+
+            if(v[2] == 1){
+                val=1;
+            }
+            else{
+                val=-1;
+            }
+
+            for(int i=l;i<=r;i++){
+                diff[i]=diff[i]+val;
+            }
+
+        }
+
+        int shift=0;
+
+        for(int i=0;i<n;i++){
+            // shift+=diff[i];
+            shift=diff[i];
+
+            int pos=s[i]-'a';
+
+            pos=(pos+shift)%26;
+
+            if(pos<0){
+                pos+=26;
+            }
+
+            s[i]='a'+pos;
+        }
+
+        return s;
+    }
+};
+
+class Solution2 {
+public:
     // do it using prefix sum
     string shiftingLetters(string s, vector<vector<int>>& shifts) {
         int n=s.size();
