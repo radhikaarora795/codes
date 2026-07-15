@@ -26,6 +26,8 @@ node *insertNode(node *root, int data){
     return root;
 }
 
+// time O(n) space O(n)
+
 vector<vector<int>> bfs(node *root){
     if(root == nullptr)
         return {};

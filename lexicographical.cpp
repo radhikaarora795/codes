@@ -33,19 +33,19 @@ vector<int> sortLexicographical(vector<int>& arr){
 
 int main() {
     
-    // lexicographical(33);
+    lexicographical(33);
 
-    // for(int x:result){
-    //     cout<<x<<" ";
-    // }
-
-    vector<int> arr={10, 2, 1, 21, 12, 100};
-
-    vector<int> ans=sortLexicographical(arr);
-
-    for(int x:ans){
+    for(int x:result){
         cout<<x<<" ";
     }
+
+    // vector<int> arr={10, 2, 1, 21, 12, 100};
+
+    // vector<int> ans=sortLexicographical(arr);
+
+    // for(int x:ans){
+    //     cout<<x<<" ";
+    // }
     
     return 0;
 }

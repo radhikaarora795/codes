@@ -2,7 +2,10 @@
 
 Problem Statement
 
-A tree is considered special if the sums of all the nodes at each level are in an Arithmatic Progression (AP) Given root node of a binary tree. Return an array representing the minimum number that can be added at each level to make that tree special.
+A tree is considered special if the sums of all the nodes at each level are 
+in an Arithmatic Progression (AP) Given root node of a binary tree. 
+Return an array representing the minimum number that can be added at each 
+level to make that tree special.
 
 Input 1 :
 

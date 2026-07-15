@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// time: O(nm)
+// space: O(n)
+
 class Solution {
 public:
     string shiftingLetters(string s, vector<vector<int>>& shifts) {
@@ -45,6 +48,10 @@ public:
         return s;
     }
 };
+
+
+// time: O(n+m)
+// space: O(n)
 
 class Solution2 {
 public:
